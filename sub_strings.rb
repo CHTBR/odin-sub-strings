@@ -1,4 +1,5 @@
 def substrings (string, substr_dictionary)
+  string.downcase!
   string_chars = string.split("")
   substr_dictionary.reduce(Hash.new()) do |hash, substring|
     substrings_of_length = []
